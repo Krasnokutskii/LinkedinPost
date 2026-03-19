@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct LinkedinArticlesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IndexMacroView()
         }
+        .modelContainer(for: [LinkedinPost.self])
     }
 }

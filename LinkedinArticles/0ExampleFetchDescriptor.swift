@@ -8,25 +8,7 @@
 import SwiftUI
 import SwiftData
 
-@Model
-final class User {
-    var info: String
-    var title: String
-    var createdAt: Date
-    var friends: [User]
 
-    init(
-        title: String = "b",
-        info: String = "a",
-        createdAt: Date = .now,
-        friends: [User] = []
-    ) {
-        self.title = title
-        self.info = info
-        self.createdAt = createdAt
-        self.friends = friends
-    }
-}
 
 func exampleFetchDescriptor() {
     // Main properties of FetchDescriptor
