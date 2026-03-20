@@ -13,10 +13,6 @@ final class User {
     var info: String
     var title: String
     var createdAt: Date
-    @Attribute(.ephemeral)
-    @Attribute(.externalStorage)
-    @Attribute(.allowsCloudEncryption)
-    @Attribute(.unique)
     var friends: [User]
 
     init(
@@ -31,3 +27,4 @@ final class User {
         self.friends = friends
     }
 }
+
