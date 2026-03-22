@@ -13,6 +13,8 @@ final class User {
     var info: String
     var title: String
     var createdAt: Date
+    @Attribute(.unique)
+    @Relationship(.unique)
     var friends: [User]
 
     init(

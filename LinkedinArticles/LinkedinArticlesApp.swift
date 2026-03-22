@@ -12,7 +12,7 @@ import SwiftData
 struct LinkedinArticlesApp: App {
     var body: some Scene {
         WindowGroup {
-            IndexMacroView()
+            EditItemView(item: <#Item#>)
         }
         .modelContainer(for: [LinkedinPost.self])
     }
